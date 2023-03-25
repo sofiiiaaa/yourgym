@@ -13,7 +13,7 @@ const Home: React.FC = () => {
             <HomeActivities/>
             <HomeAnnouncement/>
             <HomeCarousel/>
-        </Container>        
+        </Container>         
     )
 }
 
