@@ -1,7 +1,8 @@
 import React, { FC, useState } from "react";
-import { allCourses, Course } from "../mock/info_courses";
 import { Row, Col, Card, Image, Button, } from "react-bootstrap";
 import { ChevronRight, Clock } from 'react-bootstrap-icons';
+import { allCourses, Course } from "../mock/list_all_courses";
+import { user } from "../mock/user_data";
 
 interface CourseCardProps {
     course: Course
@@ -10,9 +11,9 @@ interface CourseCardProps {
 const CourseCard: React.FC<CourseCardProps> = (obj) => {
     const [unsubscribe, setUnsubscribe] = useState(null)
 
-    let status = obj.course.status
     let cardDetail;
-    if(status == "subscribed"){
+
+    if(user.subscibed_courses.includes(obj.course.id)){
         cardDetail = (
             <Row>
                 <Col xs={6}>

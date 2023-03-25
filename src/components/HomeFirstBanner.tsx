@@ -2,6 +2,10 @@ import React, {FC} from "react";
 import { Container, Image, Row, Col, Button } from "react-bootstrap";
 
 const HomeFirstBanner = () => {
+
+
+    if (window.innerWidth < 576) return <></>
+
     return (
         <Container>
             <Row className="banner-position">

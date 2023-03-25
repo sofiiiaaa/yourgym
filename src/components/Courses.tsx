@@ -1,17 +1,24 @@
 import React, { FC, useState } from "react";
 import { Container, Row, Col, Navbar } from "react-bootstrap";
 import { DropdownButton, Dropdown } from 'react-bootstrap';
-import { SecPageAllCourses } from "../mock/listAllCourses";
+import { allCourses } from "../mock/list_all_courses";
 import FilterCard from "./FilterCard";
+import { user } from "../mock/user_data";
 
 const Courses : React.FC= () => {
     const [luogo, setLuogo]= useState<string>("Ovunque");
     const [category, setCategory]= useState<string>("Tutte le categorie");
     const [activity, setActivity]= useState<string>("Tutte le attività");
+    const [userSubStatus, setUserSubStatus] = useState(user);
+    const [allCards, setallCards] = useState(allCourses); //iniziato per mopdificare conto posti liberi, segue il filterCard
 
-    const optionListLocation = new Set(SecPageAllCourses.map((course) => course.course_location));
-    const optionListcategory = new Set(SecPageAllCourses.map((course) => course.course_category));
-    const optionListAcitivity = new Set(SecPageAllCourses.map((course) => course.course_name));
+    const optionListLocation = new Set(allCourses.map((course) => course.course_location));
+    const optionListcategory = new Set(allCourses.map((course) => course.course_category));
+    const optionListAcitivity = new Set(allCourses.map((course) => course.course_name));
+
+
+
+    
 
     const listLocation = Array.from(optionListLocation).map((singleLocation)=>{
         return(
@@ -37,7 +44,7 @@ const Courses : React.FC= () => {
         )
     })
 
-    let filteredCourses = SecPageAllCourses.filter((e)=>{
+    let filteredCourses = allCourses.filter((e)=>{
         if(luogo !== "Ovunque" && e.course_location !== luogo ) return false
         if(category !== "Tutte le categorie" && e.course_category !== category ) return false
         if(activity !== "Tutte le attività" && e.course_name !== activity ) return false
@@ -93,7 +100,7 @@ const Courses : React.FC= () => {
             <Row>
                 {filteredCourses.map((e)=>{
                     return(
-                        <FilterCard course = {e}/>
+                        <FilterCard setCourse={setallCards} course = {e} user={userSubStatus} setUser={setUserSubStatus}/>
                     )
                 })}
             </Row>

@@ -31,16 +31,6 @@ const HomeAllCarousells = () => {
             <Row className="carousels" defaultActiveKey="0">
                 {showAll ? carousel : carousel.slice(5)}                    
             </Row>
-            {/* <Row >
-                
-                    {allCarousels.map((carousel) => {
-                        return (
-                            <Col xs="12" sm="auto">                    
-                                <HomeCarousel carousel={carousel} />             
-                            </Col>
-                        )
-                    })}
-            </Row> */}
         </Container>
     )
 }
