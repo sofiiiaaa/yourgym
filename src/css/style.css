@@ -1,0 +1,21 @@
+.image-size {
+  width: 10%;
+  height: auto;
+  border-radius: 50%; }
+
+.secondary-information {
+  color: #878885; }
+
+.card-image-size {
+  width: 30%;
+  height: auto; }
+
+.text-medium-size {
+  size: 1rem; }
+
+.text-small-size {
+  size: 0.5rem; }
+
+p {
+  background-color: red;
+  color: black; }

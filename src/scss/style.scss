@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixins';
+
+//components
+@import 'navigationbar';
+@import 'header';
+@import 'card';
+
+
+p{
+    background-color:red;   
+    color : black;
+}   
