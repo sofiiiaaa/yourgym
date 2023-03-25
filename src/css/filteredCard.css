@@ -1,0 +1,28 @@
+.filtered-courses-info {
+  margin: 1rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: space-around; }
+
+.subscribe-btn {
+  background-color: #a2d32f;
+  color: #066cda;
+  font-size: 1rem; }
+
+.cancel-btn {
+  background-color: transparent;
+  border: #f0a315;
+  color: #066cda;
+  font-size: 1rem; }
+
+.waiting-btn {
+  background-color: transparent;
+  border: #066cda;
+  color: #066cda;
+  font-size: 1rem; }
+
+.clock {
+  margin-right: 0.8rem; }
+
+.card-image-size {
+  width: 20%;
+  height: auto; }

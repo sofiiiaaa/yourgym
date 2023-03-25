@@ -1,0 +1,36 @@
+@import 'variables';
+
+.filtered-courses-info{
+    margin: 1rem 0rem 0rem 0rem;
+    display: flex;
+    justify-content: space-around
+}
+
+.subscribe-btn{
+    background-color: $secondary-color;
+    color: $primary-color;
+    font-size:$medium-size;
+}
+
+.cancel-btn{
+    background-color: transparent;
+    border: $orange-color;
+    color: $primary-color;
+    font-size: $medium-size;
+}
+
+.waiting-btn{
+    background-color: transparent;
+    border: $primary-color;
+    color: $primary-color;
+    font-size: $medium-size;
+}
+
+.clock{
+    margin-right:0.8rem;
+}
+
+.card-image-size{
+    width: 20%;
+    height: auto;
+}
