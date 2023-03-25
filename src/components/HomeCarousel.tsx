@@ -4,33 +4,32 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import {OneCarousel} from "../mock/myCarousel";
+import { ChevronRight } from "react-bootstrap-icons";
+import Carousel from 'react-bootstrap/Carousel';
 
+interface HomeCarouselProp {
+    carousel: OneCarousel
+}
 
-const HomeCarousel = () => {
+const HomeCarousel: React.FC<HomeCarouselProp>= (obj) => {
     return (
-       <Container>
-            <Row>
-                <Col>
-                <span> pallino blu</span> <span>MAGAZINE</span>
-                </Col>
-                <Col>
-                <span>Mostra tutti</span>
-                </Col>
-            </Row>
-             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-        </Container>
+                <Card style={{ width: '18rem' }}>
+                    <Card.Img src={obj.carousel.carousel_url} />
+                    <Button className="card-carousel-btn"><ChevronRight/></Button>
+                    <Card.Body>
+                        <Card.Title>{obj.carousel.carousel_title}</Card.Title>
+                        <Card.Text>{obj.carousel.carousel_description}</Card.Text>
+                        <Card.Text>{obj.carousel.carousel_date}</Card.Text>
+                    </Card.Body>
+                </Card>
+
+
+        // </Container>
     )
 }
+
+
 
 
 export default HomeCarousel;

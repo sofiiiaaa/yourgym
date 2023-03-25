@@ -22,11 +22,11 @@ const HomeAnnouncement = () => {
         <Container>
             <Row>
                 <Col>
-                    <Bell/>
-                    <span>AVVISI</span>
+                    <span className="text-advertisement"><Bell/></span>
+                    <span className="text-advertisement">AVVISI</span>
                 </Col>
                 <Col>
-                    <Button onClick={() => setShowAll(!showAll)}>
+                    <Button className="show-all-btn" onClick={() => setShowAll(!showAll)}>
                         {!showAll? <span> Mostra tutti</span> : <span> Nascondi tutti</span>}
                     </Button>
                 </Col>

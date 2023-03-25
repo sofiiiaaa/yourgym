@@ -1,6 +1,6 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import { allCourses, Course } from "../mock/info_courses";
-import { Row, Col, Card, Image, } from "react-bootstrap";
+import { Row, Col, Card, Image, Button, } from "react-bootstrap";
 import { ChevronRight } from 'react-bootstrap-icons';
 
 interface CourseCardProps {
@@ -8,6 +8,41 @@ interface CourseCardProps {
 }
 
 const CourseCard: React.FC<CourseCardProps> = (obj) => {
+    const [unsubscribe, setUnsubscribe] = useState(null)
+
+    let status = obj.course.status
+    let cardDetail;
+    if(status == "subscribed"){
+        cardDetail = (
+            <Row>
+                <Col xs={6}>
+                             <span className="text-small-size secondary-information"> Club</span>
+                             <br/>
+                            <span className="text-medium-size">{obj.course.course_name}</span>
+                         </Col>
+                         <Col xs={6}> 
+                             <span className="text-small-size secondary-information">Sala</span> 
+                             <br/>
+                             <span className="text-medium-size">{obj.course.course_name}</span>
+                         </Col>
+            </Row>
+        )
+    }else {
+    cardDetail =(
+        <Row>
+            <Col> 
+                N persone di te
+            </Col>
+            <Col>
+            <Button onClick ={()=> console.log("button annulla was clicked")}>
+                ANNULLA
+            </Button>
+            </Col>
+        </Row>
+    )
+    }
+
+
     return (
         <Card>
             <Card.Body>
@@ -28,18 +63,7 @@ const CourseCard: React.FC<CourseCardProps> = (obj) => {
                             <span className="text-small-size secondary-information">{obj.course.course_hour_last}</span>
                         </Col>
                     </Row>
-                    <Row style={{ margin: '1rem 0 0 0' }}>
-                        <Col xs={6}>
-                            <span className="text-small-size secondary-information"> Club</span>
-                            <br/>
-                            <span className="text-medium-size">{obj.course.course_name}</span>
-                        </Col>
-                        <Col xs={6}> 
-                            <span className="text-small-size secondary-information">Sala</span> 
-                            <br/>
-                            <span className="text-medium-size">{obj.course.course_name}</span>
-                        </Col>
-                    </Row>
+                    {cardDetail}
                 </Row>
             </Card.Body>
         </Card>
