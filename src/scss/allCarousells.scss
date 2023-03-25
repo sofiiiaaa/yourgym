@@ -1,0 +1,23 @@
+@import 'variables';
+
+// .blue-point{
+//     background-color: $primary-color;
+//     width: 1rem;
+//     border-radius: 50%;
+// }
+
+.text-magazine{
+    font-size: $medium-size;
+    color: $primary-color;
+
+}
+
+.show-all-btn{
+    background-color: transparent;
+    color: $orange-color;
+    border-color: transparent;
+}
+
+.carousels{
+    justify-content: center;
+}

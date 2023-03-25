@@ -1,0 +1,9 @@
+.align {
+  text-align: right; }
+
+.image-width {
+  width: 10%;
+  height: auto; }
+
+.ita-component {
+  display: flex; }

@@ -1,0 +1,12 @@
+@import 'variables';
+
+.text-advertisement{
+    font-size: $medium-size;
+    color:$primary-color;
+}
+
+.show-all-btn {
+    background-color: transparent;
+    color: $orange-color;
+    border-color: transparent;
+}   

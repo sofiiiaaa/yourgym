@@ -1,0 +1,5 @@
+.banner-size {
+  margin: 2rem 0 2rem 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-around; }

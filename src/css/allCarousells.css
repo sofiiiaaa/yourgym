@@ -1,0 +1,11 @@
+.text-magazine {
+  font-size: 1rem;
+  color: #007bff; }
+
+.show-all-btn {
+  background-color: transparent;
+  color: #f0a315;
+  border-color: transparent; }
+
+.carousels {
+  justify-content: center; }
