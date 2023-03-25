@@ -1,0 +1,9 @@
+@import 'variables';
+
+.card-carousel-btn{
+    background-color: $secondary-color;
+    color: $default-color;
+    width: 2.5rem;
+    border-radius: 100%;
+    align-self: end;
+}
