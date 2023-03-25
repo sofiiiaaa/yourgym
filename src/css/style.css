@@ -35,11 +35,11 @@
 
 .title-waiting-size {
   font-size: 1rem;
-  color: #007bff; }
+  color: #066cda; }
 
 .text-magazine {
   font-size: 1rem;
-  color: #007bff; }
+  color: #066cda; }
 
 .show-all-btn {
   background-color: transparent;
@@ -63,3 +63,46 @@
   width: 2.5rem;
   border-radius: 100%;
   align-self: end; }
+
+.filters {
+  background-color: #a2d32f; }
+
+.dropdown-filters {
+  padding-bottom: 1.5rem; }
+
+.dropdown {
+  background-color: transparent;
+  color: #066cda;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: #066cda; }
+
+.filtered-courses-info {
+  margin: 1rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: space-around; }
+
+.subscribe-btn {
+  background-color: #a2d32f;
+  color: #066cda;
+  font-size: 1rem; }
+
+.cancel-btn {
+  background-color: transparent;
+  border: #f0a315;
+  color: #066cda;
+  font-size: 1rem; }
+
+.waiting-btn {
+  background-color: transparent;
+  border: #066cda;
+  color: #066cda;
+  font-size: 1rem; }
+
+.clock {
+  margin-right: 0.8rem; }
+
+.card-image-size {
+  width: 20%;
+  height: auto; }

@@ -10,6 +10,7 @@ export interface Course {
     course_hour_last: string
     course_location: string
     course_sala_name: string
+  
 }
 
 interface Courses extends Array<Course>{}
@@ -52,7 +53,7 @@ export const allCourses: Courses = [
         "course_hour_start":"11.10",
         "course_hour_end": "11.40",
         "course_hour_last": "30 min",
-        "course_location": "Ravizza",
+        "course_location": "Terme",
         "course_sala_name": "Consious"
     }
 
