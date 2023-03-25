@@ -1,0 +1,18 @@
+@import 'variables';
+
+.filters{
+    background-color: $secondary-color;
+}
+
+.dropdown-filters{
+    padding-bottom:1.5rem;
+}
+
+.dropdown{
+    background-color: transparent;
+    color: $primary-color;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: $primary-color;
+}
