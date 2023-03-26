@@ -1,7 +1,18 @@
 .title-activity-size {
   font-size: 1rem;
-  color: #a2d32f; }
+  color: #afe433; }
 
 .title-waiting-size {
   font-size: 1rem;
-  color: #066cda; }
+  color: #055ab4; }
+
+.area-activities {
+  background-color: #055ab4;
+  height: 30%;
+  padding-top: 1.5rem; }
+
+.area-in-waiting {
+  background-color: #afe433;
+  width: auto;
+  height: 42%;
+  padding-top: 1.5rem; }

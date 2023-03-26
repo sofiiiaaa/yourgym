@@ -1,0 +1,13 @@
+.filters {
+  background-color: #afe433; }
+
+.dropdown-filters {
+  padding-bottom: 1.5rem; }
+
+.dropdown {
+  background-color: transparent;
+  color: #055ab4;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: #055ab4; }

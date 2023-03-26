@@ -1,5 +1,6 @@
 import React, { FC, useState } from "react";
 import { Container, Row, Col, Navbar } from "react-bootstrap";
+import { GeoAlt, Fire, BinocularsFill } from "react-bootstrap-icons";
 import { DropdownButton, Dropdown } from 'react-bootstrap';
 import { allCourses } from "../mock/list_all_courses";
 import FilterCard from "./FilterCard";
@@ -62,6 +63,7 @@ const Courses : React.FC= () => {
                     <Dropdown className="dropdown-filters">
                         <Dropdown.Toggle className="dropdown" variant="success" id="dropdown-basic">
                             <Dropdown.Item href="#/action-1"></Dropdown.Item>
+                            <GeoAlt/>
                             <b>{luogo}</b>
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
@@ -75,6 +77,7 @@ const Courses : React.FC= () => {
                 <Col xs={12} sm={4}>
                      <Dropdown className="dropdown-filters">
                         <Dropdown.Toggle className="dropdown" variant="success" id="dropdown-basic">
+                            <Fire/>
                             <b>{category}</b>
                         </Dropdown.Toggle>
                         
@@ -87,6 +90,7 @@ const Courses : React.FC= () => {
                 <Col className="text-center" xs={12} md={4}>
                      <Dropdown className="dropdown-filters">
                         <Dropdown.Toggle className="dropdown" variant="success" id="dropdown-basic">
+                            <BinocularsFill/>
                             <b>{activity}</b>
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
