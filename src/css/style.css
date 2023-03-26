@@ -1,6 +1,6 @@
 .image-size {
-  width: 10%;
-  height: auto;
+  width: 40px;
+  height: 40px;
   border-radius: 50%; }
 
 .align {
@@ -39,7 +39,9 @@
 
 .text-magazine {
   font-size: 1rem;
-  color: #066cda; }
+  color: #066cda;
+  float: left;
+  margin: 1rem 0 1rem 0; }
 
 .show-all-btn {
   background-color: transparent;
@@ -48,6 +50,14 @@
 
 .carousels {
   justify-content: center; }
+
+.title-carousel-web {
+  display: flex;
+  justify-content: space-between; }
+
+.text-show-all {
+  float: right;
+  margin: 1rem 0 1rem 0; }
 
 .banner-size {
   margin: 2rem 0 2rem 0;
@@ -106,3 +116,20 @@
 .card-image-size {
   width: 20%;
   height: auto; }
+
+.text-advertisement {
+  font-size: 1rem;
+  color: #066cda; }
+
+.show-all-btn {
+  background-color: transparent;
+  color: #f0a315;
+  border-color: transparent;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem; }
+
+.announcement-date {
+  color: #878885;
+  font-size: 0.7rem;
+  padding-left: 0.5rem; }

@@ -5,4 +5,12 @@
 .show-all-btn {
   background-color: transparent;
   color: #f0a315;
-  border-color: transparent; }
+  border-color: transparent;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem; }
+
+.announcement-date {
+  color: #878885;
+  font-size: 0.7rem;
+  padding-left: 0.5rem; }

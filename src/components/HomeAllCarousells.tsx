@@ -16,16 +16,24 @@ const HomeAllCarousells = () => {
         )
     })
 
+    const text_web = 
+        <Button className="show-all-btn" onClick={() => setShowAll(!showAll)}>
+                        {!showAll? <span><b>Mostra tutti</b></span> : <span><b>Nascondi tutti</b></span>}
+                </Button>
+    
+    const text_phone =
+        <Button className="show-all-btn" onClick={() => setShowAll(!showAll)}>
+                        {!showAll? <span> <b>Visualizza tutti</b></span> : <span><b>Nascondi tutti</b></span>}
+                </Button>
+    
     return (   
         <Container>
-             <Row>
-                <Col>
-                    <span className="text-magazine">MAGAZINE</span>
+             <Row className="title-carousel-web">
+                <Col >
+                    <span className="text-magazine"><b>MAGAZINE</b></span>
                 </Col>
                 <Col>
-                <Button className="show-all-btn" onClick={() => setShowAll(!showAll)}>
-                        {!showAll? <span> Mostra tutti</span> : <span> Nascondi tutti</span>}
-                </Button>
+                     <span className="text-show-all">{(window.innerWidth <= 576)? text_web: text_phone}</span>
                 </Col>
             </Row>
             <Row className="carousels" defaultActiveKey="0">

@@ -18,7 +18,7 @@ const FilterCard : React.FC<FilterCardProps>= ({course, setCourse, user, setUser
     let btn;
     let free_sits;
 
-    console.log(course)
+    console.log("<3")
     if(!user.subscibed_courses.includes(course.id) && !user.waiting_list.includes(course.id) && course.course_still_available_spots > 0 ) {
         btn = <Button className="subscribe-btn"><b>ISCRIVITI</b></Button>  //per visualizzazione bottone metti in attesa  setUser({...user, subscibed_courses:updatedSubscribedCourses, + course.id})
     } //per visualizzazione bottone iscriviti

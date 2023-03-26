@@ -9,6 +9,8 @@
 .text-magazine{
     font-size: $medium-size;
     color: $primary-color;
+    float:left;
+    margin: 1rem 0 1rem 0;
 
 }
 
@@ -20,4 +22,14 @@
 
 .carousels{
     justify-content: center;
+}
+
+.title-carousel-web{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-show-all{
+    float:right;
+    margin: 1rem 0 1rem 0;
 }

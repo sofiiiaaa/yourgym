@@ -3,10 +3,24 @@
 .text-advertisement{
     font-size: $medium-size;
     color:$primary-color;
+    
 }
 
 .show-all-btn {
     background-color: transparent;
     color: $orange-color;
     border-color: transparent;
+    margin:0;
+    padding:0;
+    margin-bottom: 2rem;
 }   
+
+.announcement-date{
+    color:$grease-color;
+    font-size:$small-size;
+    padding-left:0.5rem;
+}
+
+// .text-show-all-adv{
+//     margin: 1rem 0 2rem 0;
+// }
