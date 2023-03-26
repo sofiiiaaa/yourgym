@@ -4,6 +4,8 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 
 const Footer = () => {
     return (
+        <Container style={{"marginTop":"3rem"}}>
+
        <Row className="text-center ita-component" style={{display:'flex'}}>
             <Col xs={12} md={4}>
                 <Instagram/>
@@ -19,6 +21,7 @@ const Footer = () => {
                 <h3> Made by <span><b>PED</b></span></h3>
             </Col>
        </Row>
+        </Container>
     )
 }
 

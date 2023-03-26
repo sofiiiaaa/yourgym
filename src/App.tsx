@@ -9,7 +9,7 @@ import React from 'react';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <NavigationBar/>
       <Routes>
         <Route path="/" element = {<Home/>}/>
