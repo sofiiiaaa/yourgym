@@ -48,7 +48,7 @@ const CourseCard: React.FC<CourseCardProps> = (obj) => {
         <Card>
             <Row>
                 <Col xs={12} md={6} lg={3}>
-                <Card.Img variant="top" src="https://media.istockphoto.com/id/1225752911/it/foto/determinata-donna-atletica-che-sale-la-corda-in-palestra.jpg?s=1024x1024&w=is&k=20&c=sVM0q72rlaJeZB2aQ3arUfy7tWpnGHmLHp2S0E_ox3o=" />
+                <Card.Img variant="top" src="../img/arrampicata.jpg" />
                 </Col>
                 <Col xs={12} md={6} lg={9}>
                 <Card.Body>

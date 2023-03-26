@@ -33,7 +33,7 @@ const HomeAllCarousells = () => {
                     <span className="text-magazine"><b>MAGAZINE</b></span>
                 </Col>
                 <Col>
-                     <span className="text-show-all">{(window.innerWidth <= 576)? text_web: text_phone}</span>
+                     <span className="text-show-all">{(window.innerWidth >= 576)? text_web: text_phone}</span>
                 </Col>
             </Row>
             <Row className="carousels" defaultActiveKey="0">
