@@ -14,7 +14,7 @@ const NavigationBar = () => {
         <Row className="w-100">
           <Col className="d-flex justify-content-end align-items-center">
             <Nav className="ml-auto">
-              <Nav.Link>
+              <Nav.Link href="/">
                 <House />
               </Nav.Link>
               <Nav.Link href="/courses">

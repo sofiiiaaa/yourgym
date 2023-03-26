@@ -5,10 +5,12 @@
 }
 
 .image-width{
-        width: 10%;
-        height: auto;
+        width: 5%;
+        height: 30%;
 }
 
 .ita-component{  
     display:$flex;
+    justify-content: center;
+    align-items: baseline;
 }

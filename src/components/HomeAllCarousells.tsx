@@ -37,7 +37,7 @@ const HomeAllCarousells = () => {
                 </Col>
             </Row>
             <Row className="carousels" defaultActiveKey="0">
-                {showAll ? carousel : carousel.slice(5)}                    
+                    {showAll ? carousel : carousel.slice(5)}             
             </Row>
         </Container>
     )
