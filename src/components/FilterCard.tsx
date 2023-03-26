@@ -20,16 +20,21 @@ const FilterCard : React.FC<FilterCardProps>= ({course, setCourse, user, setUser
 
     console.log("<3")
     if(!user.subscibed_courses.includes(course.id) && !user.waiting_list.includes(course.id) && course.course_still_available_spots > 0 ) {
-        btn = <Button className="subscribe-btn"><b>ISCRIVITI</b></Button>  //per visualizzazione bottone metti in attesa  setUser({...user, subscibed_courses:updatedSubscribedCourses, + course.id})
+        btn = <Button className="subscribe-btn" onClick={()=> {
+            const updatedSubscribedCourses = user.subscibed_courses.push(course.id);
+            setUser({...user})}
+        }><b>ISCRIVITI</b></Button>  //per visualizzazione bottone metti in attesa  setUser({...user, subscibed_courses:updatedSubscribedCourses, + course.id})
     } //per visualizzazione bottone iscriviti
     else if(!user.subscibed_courses.includes(course.id) && course.course_still_available_spots <= 0 ) {
         btn = <Button className="waiting-btn"><b>METTI IN ATTESA</b></Button> //per visualizzazione bottone metti in attesa  setUser({...user, waiting_list:updatedIWaitingCourses + course.id})
+        // const updatedIWaitingCourses = user.waiting_list.filter(itemId => itemId == course.id);
+        // setUser({...user, waiting_list:updatedIWaitingCourses })
     }else if (user.subscibed_courses.includes(course.id) || user.waiting_list.includes(course.id)){
         btn = <Button onClick = {()=>{
             const updatedSubscribedCourses = user.subscibed_courses.filter(itemId => itemId !== course.id);
             const updatedIWaitingCourses = user.waiting_list.filter(itemId => itemId !== course.id);
             setUser({...user, subscibed_courses:updatedSubscribedCourses, waiting_list:updatedIWaitingCourses }) //logica per far si che al click su annulla compaia il bottone metti in attesa o iscriviti.
-            setCourse({...course, course_still_available_spots: course.course_still_available_spots +1}) //per aggiungere un posto alla posizione libera
+            // setCourse({...course, course_still_available_spots: course.course_still_available_spots +1}) //per aggiungere un posto alla posizione libera
         }} className="cancel-btn"><b>ANNULLA</b></Button> //per visualizzazione bottone annulla
     }
     
