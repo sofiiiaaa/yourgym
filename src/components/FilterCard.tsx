@@ -20,23 +20,30 @@ const FilterCard : React.FC<FilterCardProps>= ({course, setCourse, user, setUser
 
     console.log("<3")
     if(!user.subscibed_courses.includes(course.id) && !user.waiting_list.includes(course.id) && course.course_still_available_spots > 0 ) {
-        btn = <Button className="subscribe-btn"><b>ISCRIVITI</b></Button>  //per visualizzazione bottone metti in attesa  setUser({...user, subscibed_courses:updatedSubscribedCourses, + course.id})
+        btn = <Button className="subscribe-btn" onClick= {()=> {
+            user.subscibed_courses.push(course.id);
+            setUser({...user})}
+        }><b>ISCRIVITI</b></Button>  //per visualizzazione bottone metti in attesa  setUser({...user, subscibed_courses:updatedSubscribedCourses, + course.id})
     } //per visualizzazione bottone iscriviti
     else if(!user.subscibed_courses.includes(course.id) && course.course_still_available_spots <= 0 ) {
-        btn = <Button className="waiting-btn"><b>METTI IN ATTESA</b></Button> //per visualizzazione bottone metti in attesa  setUser({...user, waiting_list:updatedIWaitingCourses + course.id})
+        btn = <Button className="waiting-btn" onClick= {()=> {
+            user.subscibed_courses.push(course.id);
+            const updatedIWaitingCourses = user.waiting_list.filter(itemId => itemId !== course.id);
+            setUser({...user, waiting_list:updatedIWaitingCourses })
+        }}><b>METTI IN ATTESA</b></Button> //per visualizzazione bottone metti in attesa  setUser({...user, waiting_list:updatedIWaitingCourses + course.id})
     }else if (user.subscibed_courses.includes(course.id) || user.waiting_list.includes(course.id)){
-        btn = <Button onClick = {()=>{
+        btn = <Button onClick = {()=> {
             const updatedSubscribedCourses = user.subscibed_courses.filter(itemId => itemId !== course.id);
             const updatedIWaitingCourses = user.waiting_list.filter(itemId => itemId !== course.id);
             setUser({...user, subscibed_courses:updatedSubscribedCourses, waiting_list:updatedIWaitingCourses }) //logica per far si che al click su annulla compaia il bottone metti in attesa o iscriviti.
-            setCourse({...course, course_still_available_spots: course.course_still_available_spots +1}) //per aggiungere un posto alla posizione libera
+            // setCourse({...course, course_still_available_spots: course.course_still_available_spots +1}) //per aggiungere un posto alla posizione libera
         }} className="cancel-btn"><b>ANNULLA</b></Button> //per visualizzazione bottone annulla
     }
     
     const cardWeb =
              <Row>
                  <Col xs={12}>
-                     <Card.Img className="float-start me-3 card-image-size" src="https://scottspinelli.files.wordpress.com/2018/01/6358992963022842562123671258_gym20people.jpg" />
+                     <Card.Img className="float-start me-3 card-image-size" src={course.course_url} />
                      <Card.Body className="filtered-courses-info" >
                         <Row>
 

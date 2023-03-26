@@ -27,7 +27,7 @@ const NavigationBar = () => {
                 <Image
                   fluid
                   className="image-size"
-                  src="https://img.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg?w=740&t=st=1679689394~exp=1679689994~hmac=aef2b4b245234e289c6788c621ce0f6cb7e320ab36fcace215ec69ca57009c90"
+                  src="../img/photo_profile.jpg"
                   alt="profile image"
                 />
                 <ChevronDown />

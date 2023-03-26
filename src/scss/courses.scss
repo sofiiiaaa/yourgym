@@ -1,11 +1,17 @@
 @import 'variables';
 
+.filter-navbar{
+    display:block;
+}
+
 .filters{
+    display:flex;
     background-color: $secondary-color;
 }
 
 .dropdown-filters{
     padding-bottom:1.5rem;
+    border-bottom:transparent;
 }
 
 .dropdown{
@@ -14,5 +20,5 @@
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
-    border-bottom: $primary-color;
+    border-bottom:3px solid $primary-color;
 }

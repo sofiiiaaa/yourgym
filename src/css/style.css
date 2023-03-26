@@ -33,11 +33,13 @@
 
 .title-activity-size {
   font-size: 1rem;
-  color: #afe433; }
+  color: #afe433;
+  padding-left: 0.3rem; }
 
 .title-waiting-size {
   font-size: 1rem;
-  color: #055ab4; }
+  color: #055ab4;
+  padding-left: 0.3rem; }
 
 .area-activities {
   background-color: #055ab4;
@@ -87,11 +89,16 @@
   border-radius: 100%;
   align-self: end; }
 
+.filter-navbar {
+  display: block; }
+
 .filters {
+  display: flex;
   background-color: #afe433; }
 
 .dropdown-filters {
-  padding-bottom: 1.5rem; }
+  padding-bottom: 1.5rem;
+  border-bottom: transparent; }
 
 .dropdown {
   background-color: transparent;
@@ -99,7 +106,7 @@
   border-top: transparent;
   border-left: transparent;
   border-right: transparent;
-  border-bottom: #055ab4; }
+  border-bottom: 3px solid #055ab4; }
 
 .filtered-courses-info {
   margin: 1rem 0rem 0rem 0rem;

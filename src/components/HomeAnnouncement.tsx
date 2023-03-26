@@ -17,12 +17,22 @@ const HomeAnnouncement = () => {
             <HomeSingleAnnouncement announcement={announce} />
         )
     })
+    
+     const text_web = 
+        <Button className="show-all-btn" onClick={() => setShowAll(!showAll)}>
+                        {!showAll? <span><b>Mostra tutti</b></span> : <span><b>Nascondi tutti</b></span>}
+                </Button>
+    
+    const text_phone =
+        <Button className="show-all-btn" onClick={() => setShowAll(!showAll)}>
+                        {!showAll? <span> <b>Visualizza tutti</b></span> : <span><b>Nascondi tutti</b></span>}
+                </Button>
 
     return (
         <Container>
             <Row>
                 <Col className="text-start">
-                    <span className="text-advertisement"><Bell/></span>
+                    <span className="text-advertisement"><Bell/>  </span>
                     <span className="text-advertisement"><b>AVVISI</b></span>
                 </Col>
                 <Col className="text-end">

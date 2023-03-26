@@ -54,7 +54,7 @@ const Courses : React.FC= () => {
 
     return (
         <Container>
-            <Navbar sticky="top">
+            <Navbar sticky="top" className="filter-navbar">
             <Row className=" text-center filters">
                 <Col xs={12} md={12}>
                     <p>Filtri</p>
@@ -101,6 +101,7 @@ const Courses : React.FC= () => {
                 </Col>
             </Row>
             </Navbar>
+
             <Row>
                 {filteredCourses.map((e)=>{
                     return(

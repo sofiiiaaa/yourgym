@@ -17,7 +17,7 @@ const HomeActivities = () => {
             <Col xs={12} sm={6}>
                 <div className="area-activities">
                     <h3 className="title-activity-size">
-                        <span><CalendarWeek /></span>
+                        <span><CalendarWeek />  </span>
                         <span >LE TUE PROSSIME ATTIVITA'</span>
                     </h3>
                     {next_activities.map((course) => {
@@ -80,7 +80,7 @@ const HomeActivities = () => {
 
     //
     return (
-        <Container fluid>
+        <Container>
             <Row>
                <Col>
                     {(window.innerWidth >= 576) ? justCards : carouselCards}
