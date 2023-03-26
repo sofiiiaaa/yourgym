@@ -23,7 +23,7 @@ jobs:
         run: docker build -t yourgym .
 
       - name: Tag Docker image
-        run: docker tag -f yourgym ghcr.io/${{ github.repository_owner }} yourgym:${{ github.sha }}
+        run: docker tag yourgym ghcr.io/${{ github.repository_owner }}/yourgym:${{ github.sha }}
 
       - name: Push Docker image
-        run: docker push ghcr.io/${{ github.repository_owner }} yourgym:${{ github.sha }}
+        run: docker push ghcr.io/${{ github.repository_owner }}/yourgym:${{ github.sha }}
