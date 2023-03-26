@@ -3,26 +3,40 @@
   display: flex;
   justify-content: space-around; }
 
+.filtered-courses-info {
+  flex-direction: column; }
+
 .subscribe-btn {
-  background-color: #a2d32f;
-  color: #066cda;
+  background-color: #afe433;
+  color: #055ab4;
   font-size: 1rem; }
 
 .cancel-btn {
   background-color: transparent;
   border: #f0a315;
-  color: #066cda;
-  font-size: 1rem; }
+  color: #055ab4;
+  font-size: 1rem;
+  border: 2px solid #055ab4; }
 
 .waiting-btn {
   background-color: transparent;
-  border: #066cda;
-  color: #066cda;
-  font-size: 1rem; }
+  border: #055ab4;
+  color: #055ab4;
+  font-size: 1rem;
+  border: 2px solid #f0a315; }
 
 .clock {
   margin-right: 0.8rem; }
 
-.card-image-size {
-  width: 20%;
-  height: auto; }
+.smart-start-hour {
+  padding-right: 0.5rem; }
+
+.detail-course-btn {
+  background-color: transparent;
+  color: #055ab4;
+  font-size: bold;
+  width: 2rem;
+  border: none; }
+
+.course-name {
+  color: #055ab4; }

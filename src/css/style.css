@@ -33,15 +33,26 @@
 
 .title-activity-size {
   font-size: 1rem;
-  color: #a2d32f; }
+  color: #afe433; }
 
 .title-waiting-size {
   font-size: 1rem;
-  color: #066cda; }
+  color: #055ab4; }
+
+.area-activities {
+  background-color: #055ab4;
+  height: 30%;
+  padding-top: 1.5rem; }
+
+.area-in-waiting {
+  background-color: #afe433;
+  width: auto;
+  height: 42%;
+  padding-top: 1.5rem; }
 
 .text-magazine {
   font-size: 1rem;
-  color: #066cda;
+  color: #055ab4;
   float: left;
   margin: 1rem 0 1rem 0; }
 
@@ -70,58 +81,72 @@
   justify-content: space-around; }
 
 .card-carousel-btn {
-  background-color: #a2d32f;
+  background-color: #afe433;
   color: #000000;
   width: 2.5rem;
   border-radius: 100%;
   align-self: end; }
 
 .filters {
-  background-color: #a2d32f; }
+  background-color: #afe433; }
 
 .dropdown-filters {
   padding-bottom: 1.5rem; }
 
 .dropdown {
   background-color: transparent;
-  color: #066cda;
+  color: #055ab4;
   border-top: transparent;
   border-left: transparent;
   border-right: transparent;
-  border-bottom: #066cda; }
+  border-bottom: #055ab4; }
 
 .filtered-courses-info {
   margin: 1rem 0rem 0rem 0rem;
   display: flex;
   justify-content: space-around; }
 
+.filtered-courses-info {
+  flex-direction: column; }
+
 .subscribe-btn {
-  background-color: #a2d32f;
-  color: #066cda;
+  background-color: #afe433;
+  color: #055ab4;
   font-size: 1rem; }
 
 .cancel-btn {
   background-color: transparent;
   border: #f0a315;
-  color: #066cda;
-  font-size: 1rem; }
+  color: #055ab4;
+  font-size: 1rem;
+  border: 2px solid #055ab4; }
 
 .waiting-btn {
   background-color: transparent;
-  border: #066cda;
-  color: #066cda;
-  font-size: 1rem; }
+  border: #055ab4;
+  color: #055ab4;
+  font-size: 1rem;
+  border: 2px solid #f0a315; }
 
 .clock {
   margin-right: 0.8rem; }
 
-.card-image-size {
-  width: 20%;
-  height: auto; }
+.smart-start-hour {
+  padding-right: 0.5rem; }
+
+.detail-course-btn {
+  background-color: transparent;
+  color: #055ab4;
+  font-size: bold;
+  width: 2rem;
+  border: none; }
+
+.course-name {
+  color: #055ab4; }
 
 .text-advertisement {
   font-size: 1rem;
-  color: #066cda;
+  color: #055ab4;
   padding-top: 0.5rem; }
 
 .show-all-btn {

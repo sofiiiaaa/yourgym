@@ -6,6 +6,9 @@
     justify-content: space-around
 }
 
+.filtered-courses-info {
+    flex-direction: column
+}
 .subscribe-btn{
     background-color: $secondary-color;
     color: $primary-color;
@@ -17,6 +20,7 @@
     border: $orange-color;
     color: $primary-color;
     font-size: $medium-size;
+    border: 2px solid $primary-color;
 }
 
 .waiting-btn{
@@ -24,13 +28,31 @@
     border: $primary-color;
     color: $primary-color;
     font-size: $medium-size;
+    border: 2px solid $orange-color;
 }
 
 .clock{
     margin-right:0.8rem;
 }
 
-.card-image-size{
-    width: 20%;
-    height: auto;
+.smart-start-hour{
+    padding-right:0.5rem;
 }
+
+.detail-course-btn{
+    background-color: transparent;
+    color: $primary-color;
+    font-size:bold;
+    width:2rem;
+    border:none;
+}
+
+.course-name{
+    color:$primary-color;
+}
+
+
+// .card-image-size{
+//     width: 20%;
+//     height: auto;
+// }
