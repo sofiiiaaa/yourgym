@@ -1,6 +1,7 @@
 .text-advertisement {
   font-size: 1rem;
-  color: #066cda; }
+  color: #066cda;
+  padding-top: 0.5rem; }
 
 .show-all-btn {
   background-color: transparent;

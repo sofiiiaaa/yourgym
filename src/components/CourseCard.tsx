@@ -46,27 +46,28 @@ const CourseCard: React.FC<CourseCardProps> = (obj) => {
 
     return (
         <Card>
-            <Card.Body>
-                <Image className="float-start me-3 card-image-size" src="https://media.istockphoto.com/id/1225752911/it/foto/determinata-donna-atletica-che-sale-la-corda-in-palestra.jpg?s=1024x1024&w=is&k=20&c=sVM0q72rlaJeZB2aQ3arUfy7tWpnGHmLHp2S0E_ox3o=" alt="Yoga" />
-                <Row style={{ margin: '1rem 0rem 0rem 0rem' }}>
-                    <Col xs={9}>
-                        <Card.Title> {obj.course.course_name}</Card.Title>
+            <Row>
+                <Col xs={12} md={6} lg={3}>
+                <Card.Img variant="top" src="https://media.istockphoto.com/id/1225752911/it/foto/determinata-donna-atletica-che-sale-la-corda-in-palestra.jpg?s=1024x1024&w=is&k=20&c=sVM0q72rlaJeZB2aQ3arUfy7tWpnGHmLHp2S0E_ox3o=" />
+                </Col>
+                <Col xs={12} md={6} lg={9}>
+                <Card.Body>
+                    <Card.Title>{obj.course.course_name}</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">{obj.course.course_date}</Card.Subtitle>
+                    <Row>
+                    <Col xs={6}>
+                        <Card.Text>{obj.course.course_hour_start} - {obj.course.course_hour_end}</Card.Text>
                     </Col>
-                    <Col xs={3}>
-                        <ChevronRight />
+                    <Col xs={6}>
+                        <Card.Text className="text-small-size secondary-information">
+                        <span className="clock"><Clock/></span>{obj.course.course_hour_last}
+                        </Card.Text>
                     </Col>
-                    <Row style={{ margin: '1rem 0rem 0rem 0rem' }}>
-                        <Col style={{ color: 'grease' }}><b>{obj.course.course_date}</b></Col>
-                    </Row>
-                    <Row style={{ margin: '1rem 0rem 0rem 0rem' }}>
-                        <Col xs={6}> <b>{obj.course.course_hour_start}</b> {obj.course.course_hour_end}</Col>
-                        <Col xs={6}>
-                            <span className="text-small-size secondary-information"><span className="clock"><Clock/></span>{obj.course.course_hour_last}</span>
-                        </Col>
                     </Row>
                     {cardDetail}
-                </Row>
-            </Card.Body>
+                </Card.Body>
+                </Col>
+            </Row>
         </Card>
     )
 }

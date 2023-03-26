@@ -23,11 +23,13 @@
   text-align: right; }
 
 .image-width {
-  width: 10%;
-  height: auto; }
+  width: 5%;
+  height: 30%; }
 
 .ita-component {
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  align-items: baseline; }
 
 .title-activity-size {
   font-size: 1rem;
@@ -119,7 +121,8 @@
 
 .text-advertisement {
   font-size: 1rem;
-  color: #066cda; }
+  color: #066cda;
+  padding-top: 0.5rem; }
 
 .show-all-btn {
   background-color: transparent;
