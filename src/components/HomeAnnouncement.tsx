@@ -21,13 +21,13 @@ const HomeAnnouncement = () => {
     return (
         <Container>
             <Row>
-                <Col>
+                <Col className="text-start">
                     <span className="text-advertisement"><Bell/></span>
-                    <span className="text-advertisement">AVVISI</span>
+                    <span className="text-advertisement"><b>AVVISI</b></span>
                 </Col>
-                <Col>
+                <Col className="text-end">
                     <Button className="show-all-btn" onClick={() => setShowAll(!showAll)}>
-                        {!showAll? <span> Mostra tutti</span> : <span> Nascondi tutti</span>}
+                        <span className="text-show-all-adv">{!showAll? <span><b>Mostra tutti</b></span> : <span><b>Nascondi tutti</b></span>}</span>
                     </Button>
                 </Col>
                 <Accordion defaultActiveKey="0">

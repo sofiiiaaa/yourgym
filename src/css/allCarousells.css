@@ -1,6 +1,8 @@
 .text-magazine {
   font-size: 1rem;
-  color: #066cda; }
+  color: #066cda;
+  float: left;
+  margin: 1rem 0 1rem 0; }
 
 .show-all-btn {
   background-color: transparent;
@@ -9,3 +11,11 @@
 
 .carousels {
   justify-content: center; }
+
+.title-carousel-web {
+  display: flex;
+  justify-content: space-between; }
+
+.text-show-all {
+  float: right;
+  margin: 1rem 0 1rem 0; }
