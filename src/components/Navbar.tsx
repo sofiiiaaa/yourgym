@@ -6,32 +6,33 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {Image,} from "react-bootstrap";
 import { House, CalendarWeek, Alarm, ChevronDown } from 'react-bootstrap-icons';
+import { BrowserRouter, NavLink } from 'react-router-dom';
 
-const NavigationBar = () => {
+const NavigationBar: React.FC = () => {
     return (
     <Container>
       <Navbar bg="light" variant="light">
         <Row className="w-100">
           <Col className="d-flex justify-content-end align-items-center">
             <Nav className="ml-auto">
-              <Nav.Link href="/">
+              <NavLink className="nav-link" to="/">
                 <House />
-              </Nav.Link>
-              <Nav.Link href="/courses">
+              </NavLink>
+              <NavLink className="nav-link" to="/courses">
                 <CalendarWeek />
-              </Nav.Link>
-              <Nav.Link href="/courses">
+              </NavLink>
+              <NavLink className="nav-link" to="/courses">
                 <Alarm />
-              </Nav.Link>
-              <Nav.Link className="d-flex align-items-center">
+              </NavLink>
+              <NavLink to="/" className="nav-link d-flex align-items-center">
                 <Image
                   fluid
                   className="image-size"
-                  src="../img/photo_profile.jpg"
-                  alt="profile image"
+                  src={`${process.env.PUBLIC_URL}/img/photo_profile.jpg`}
+                  alt="immagine di profilo"
                 />
                 <ChevronDown />
-              </Nav.Link>
+              </NavLink>
             </Nav>
           </Col>
         </Row>

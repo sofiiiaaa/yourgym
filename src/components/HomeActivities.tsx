@@ -22,7 +22,7 @@ const HomeActivities = () => {
                     </h3>
                     {next_activities.map((course) => {
                         return (
-                            <CourseCard course={course} />
+                            <CourseCard course={course}  key={"homeCourseN" + course.id}/>
                         )
                     })}
 
@@ -33,7 +33,7 @@ const HomeActivities = () => {
                     <h3 className="title-waiting-size"> HAI N ATTIVITA' IN LISTA D'ATTESA</h3>
                     {waiting_activities.map((course) => {
                         return (
-                            <CourseCard course={course} />
+                            <CourseCard course={course}  key={"homeCourseW" + course.id} />
                         )
                     })}
 
@@ -55,7 +55,7 @@ const HomeActivities = () => {
                             </h3>
                             {next_activities.map((course) => {
                                 return (
-                                    <CourseCard course={course} />
+                                    <CourseCard course={course} key={"homeCourseN" + course.id}/>
                                 )
                             })}
 
@@ -66,7 +66,7 @@ const HomeActivities = () => {
                             <h3 className="title-waiting-size"> HAI N ATTIVITA' IN LISTA D'ATTESA</h3>
                             {waiting_activities.map((course) => {
                                 return (
-                                    <CourseCard course={course} />
+                                    <CourseCard course={course} key={"homeCourseW" + course.id}/>
                                 )
                             })}
                         </div>

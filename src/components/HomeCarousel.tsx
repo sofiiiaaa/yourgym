@@ -14,9 +14,9 @@ interface HomeCarouselProp {
 
 const HomeCarousel: React.FC<HomeCarouselProp>= (obj) => {
     return (
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img src={obj.carousel.carousel_url} />
-                    <Button className="card-carousel-btn"><ChevronRight/></Button>
+                <Card className="card-event">
+                    <Card.Img src={obj.carousel.carousel_url} alt="dettaglio evento" />
+                    <Button className="card-carousel-btn" onClick = {()=> alert("no page available.")}><ChevronRight/></Button>
                     <Card.Body>
                         <Card.Title>{obj.carousel.carousel_title}</Card.Title>
                         <Card.Text>{obj.carousel.carousel_description}</Card.Text>

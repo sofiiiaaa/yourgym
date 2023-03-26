@@ -35,7 +35,7 @@ const CourseCard: React.FC<CourseCardProps> = (obj) => {
                 N persone di te
             </Col>
             <Col>
-            <Button onClick ={()=> console.log("button annulla was clicked")}>
+            <Button onClick = {()=> alert("no page available.")}>
                 ANNULLA
             </Button>
             </Col>
@@ -45,10 +45,10 @@ const CourseCard: React.FC<CourseCardProps> = (obj) => {
 
 
     return (
-        <Card>
+        <Card key={"coursecard" + obj.course.id}>
             <Row>
                 <Col xs={12} md={6} lg={3}>
-                <Card.Img variant="top" src="../img/arrampicata.jpg" />
+                <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/img/arrampicata.jpg`} alt="arrampicata" />
                 </Col>
                 <Col xs={12} md={6} lg={9}>
                 <Card.Body>

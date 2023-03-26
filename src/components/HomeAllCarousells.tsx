@@ -12,7 +12,7 @@ const HomeAllCarousells = () => {
 
      let carousel = allCarousels.map((singleCarousel) => {
         return (
-            <HomeCarousel carousel={singleCarousel} />
+            <HomeCarousel carousel={singleCarousel} key={singleCarousel.id} />
         )
     })
 
@@ -36,7 +36,7 @@ const HomeAllCarousells = () => {
                      <span className="text-show-all">{(window.innerWidth >= 576)? text_web: text_phone}</span>
                 </Col>
             </Row>
-            <Row className="carousels" defaultActiveKey="0">
+            <Row className="carousels">
                     {showAll ? carousel : carousel.slice(5)}             
             </Row>
         </Container>

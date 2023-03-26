@@ -4,16 +4,16 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 
 const Footer = () => {
     return (
-        <Container style={{"marginTop":"3rem"}}>
+        <Container className="footer-bar">
 
-       <Row className="text-center ita-component" style={{display:'flex'}}>
+       <Row className="text-center ita-component">
             <Col xs={12} md={4}>
                 <Instagram/>
                 <Facebook/>
                 <Youtube/>
             </Col>
             <Col xs={12} md={4} className="ita-component">
-                <Image className="image-width" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/800px-Flag_of_Italy.svg.png?20111003040337" alt="italian flag"/>
+                <Image className="image-width" src={`${process.env.PUBLIC_URL}/img/italian_flag.jpg`} alt="bandiera italiana"/>
                 <h3> ITA</h3>
                 <ChevronDown/>
             </Col>

@@ -89,6 +89,9 @@
   border-radius: 100%;
   align-self: end; }
 
+.card-event {
+  width: 18rem; }
+
 .filter-navbar {
   display: block; }
 
@@ -107,6 +110,19 @@
   border-left: transparent;
   border-right: transparent;
   border-bottom: 3px solid #055ab4; }
+
+.course-filter {
+  background-color: #afe433; }
+
+.smart-filter-text {
+  border: transparent; }
+
+.smart-filter-body {
+  flex-direction: column;
+  display: block; }
+
+.smart-filter-btn {
+  border: none; }
 
 .filtered-courses-info {
   margin: 1rem 0rem 0rem 0rem;
@@ -150,6 +166,13 @@
 
 .course-name {
   color: #055ab4; }
+
+.card-image-size {
+  width: 20%;
+  height: 100%; }
+
+.footer-bar {
+  margin-top: 2rem; }
 
 .text-advertisement {
   font-size: 1rem;

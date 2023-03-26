@@ -2,7 +2,7 @@
 
 .filter-navbar{
     display:block;
-}
+} 
 
 .filters{
     display:flex;
@@ -22,3 +22,24 @@
     border-right: transparent;
     border-bottom:3px solid $primary-color;
 }
+
+.course-filter{
+    background-color: $secondary-color;
+}
+
+.smart-filter-text{
+    border:transparent;
+}
+
+.smart-filter-body{
+    flex-direction: column;
+    display:block;
+}
+
+.smart-filter-btn{
+    border:none;
+}
+
+// .smart-filter-btn:focus {
+//  outline: none;
+// }

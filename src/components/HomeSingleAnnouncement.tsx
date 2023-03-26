@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React from "react";
 import Accordion from 'react-bootstrap/Accordion';
 import { Announcement } from "../mock/announcement";
 import { Col } from "react-bootstrap";

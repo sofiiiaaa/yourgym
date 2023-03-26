@@ -43,10 +43,9 @@ const FilterCard : React.FC<FilterCardProps>= ({course, setCourse, user, setUser
     const cardWeb =
              <Row>
                  <Col xs={12}>
-                     <Card.Img className="float-start me-3 card-image-size" src={course.course_url} />
+                     <Card.Img className="float-start me-3 card-image-size" src={course.course_url} alt="dettagli corso"/>
                      <Card.Body className="filtered-courses-info" >
                         <Row>
-
                          <Col xs="2">
                              <Card.Title>{course.course_name}</Card.Title>
                          </Col>
@@ -111,9 +110,7 @@ const FilterCard : React.FC<FilterCardProps>= ({course, setCourse, user, setUser
 
     return (
         <Card key={"courseKey2"+ course.id}>
-            {/* <Col> */}
                 {(window.innerWidth >=576)? cardWeb : cardSmartphone }
-            {/* </Col> */}
         </Card>
     )
 }

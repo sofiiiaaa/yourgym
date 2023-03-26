@@ -14,7 +14,7 @@ const HomeAnnouncement = () => {
 
     let announcements = allAnnouncements.map((announce) => {
         return (
-            <HomeSingleAnnouncement announcement={announce} />
+            <HomeSingleAnnouncement announcement={announce} key={"announceKey" + announce.id}/>
         )
     })
     

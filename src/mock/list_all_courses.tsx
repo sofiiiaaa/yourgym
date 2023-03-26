@@ -18,11 +18,12 @@ export interface Course {
 
 interface Courses extends Array<Course>{}
 
+console.log(process.env.PUBLIC_URL)
 
 export const allCourses: Courses = [
     {
         "id": "1",
-        "course_url": "../img/postural_training.jpg",
+        "course_url":  `${process.env.PUBLIC_URL}/img/postural_training.jpg`,
         "course_category": "cardiovascolari e tonificanzione", //da modificare
         "course_date": "Oggi",
         "course_name": "Postural Training",
@@ -38,7 +39,7 @@ export const allCourses: Courses = [
     },
     {
         "id": "2",
-        "course_url": "../img/hata_yoga.webp",
+        "course_url": `${process.env.PUBLIC_URL}/img/hata_yoga.webp`,
         "course_category": "cardiovascolari e tonificanzione", //da cambiare
         "course_date": "Oggi",
         "course_name": "Hata Yoga",
@@ -54,7 +55,7 @@ export const allCourses: Courses = [
     },
     {
         "id": "3",
-        "course_url": "../img/pancafit.jpg",
+        "course_url": `${process.env.PUBLIC_URL}/img/pancafit.jpg`,
         "course_category": "cardiovascolari e tonificanzione", //da modificare
         "course_date": "Oggi",
         "course_name": "PancaFit",
@@ -70,7 +71,7 @@ export const allCourses: Courses = [
     },
     {
         "id": "4",
-        "course_url": "../img/pancafit.jpg",
+        "course_url": `${process.env.PUBLIC_URL}/img/pancafit.jpg`,
         "course_category": "cardiovascolari e tonificanzione", //da modificare
         "course_date": "Oggi",
         "course_name": "PancaFit",
@@ -86,7 +87,7 @@ export const allCourses: Courses = [
     },
     {
         "id": "5",
-        "course_url": "../img/pancafit.jpg",
+        "course_url": `${process.env.PUBLIC_URL}/img/pancafit.jpg`,
         "course_category": "cardiovascolari e tonificanzione", //da modificare
         "course_date": "Oggi",
         "course_name": "PancaFit",
@@ -102,7 +103,7 @@ export const allCourses: Courses = [
     },
     {
         "id": "6",
-        "course_url": "../img/pancafit.jpg",
+        "course_url": `${process.env.PUBLIC_URL}/img/pancafit.jpg`,
         "course_category": "cardiovascolari e tonificanzione", //da modificare
         "course_date": "Oggi",
         "course_name": "PancaFit",
@@ -118,7 +119,7 @@ export const allCourses: Courses = [
     },
     {
         "id": "7",
-        "course_url": "../img/pancafit.jpg",
+        "course_url": `${process.env.PUBLIC_URL}/img/pancafit.jpg`,
         "course_category": "cardiovascolari e tonificanzione", //da modificare
         "course_date": "Oggi",
         "course_name": "PancaFit",
@@ -134,7 +135,7 @@ export const allCourses: Courses = [
     },
     {
         "id": "8",
-        "course_url": "../img/pancafit.jpg",
+        "course_url": `${process.env.PUBLIC_URL}/img/pancafit.jpg`,
         "course_category": "cardiovascolari e tonificanzione", //da modificare
         "course_date": "Oggi",
         "course_name": "PancaFit",
@@ -150,7 +151,7 @@ export const allCourses: Courses = [
     },
     {
         "id": "9",
-        "course_url": "../img/pancafit.jpg",
+        "course_url": `${process.env.PUBLIC_URL}/img/pancafit.jpg`,
         "course_category": "cardiovascolari e tonificanzione", //da modificare
         "course_date": "Oggi",
         "course_name": "PancaFit",
@@ -166,7 +167,7 @@ export const allCourses: Courses = [
     },
     {
         "id": "10",
-        "course_url": "../img/pancafit.jpg",
+        "course_url": `${process.env.PUBLIC_URL}/img/pancafit.jpg`,
         "course_category": "cardiovascolari e tonificanzione", //da modificare
         "course_date": "Oggi",
         "course_name": "PancaFit",
@@ -182,7 +183,7 @@ export const allCourses: Courses = [
     },
     {
         "id": "11",
-        "course_url": "../img/pancafit.jpg",
+        "course_url": `${process.env.PUBLIC_URL}/img/pancafit.jpg`,
         "course_category": "cardiovascolari e tonificanzione", //da modificare
         "course_date": "Oggi",
         "course_name": "PancaFit",
@@ -198,7 +199,7 @@ export const allCourses: Courses = [
     },
     {
         "id": "12",
-        "course_url": "../img/pancafit.jpg",
+        "course_url": `${process.env.PUBLIC_URL}/img/pancafit.jpg`,
         "course_category": "cardiovascolari e tonificanzione", //da modificare
         "course_date": "Oggi",
         "course_name": "PancaFit",
@@ -214,7 +215,7 @@ export const allCourses: Courses = [
     },
     {
         "id": "13",
-        "course_url": "../img/acqua_gym.jpg",
+        "course_url": `${process.env.PUBLIC_URL}/img/acqua_gym.jpg`,
         "course_category": "attività in acqua", //da modificare
         "course_date": "Oggi",
         "course_name": "Play acqua",
@@ -230,7 +231,7 @@ export const allCourses: Courses = [
     },
     {
         "id": "14",
-        "course_url": "../img/les_mil_grit.jpg",
+        "course_url": `${process.env.PUBLIC_URL}/img/les_mil_grit.jpg`,
         "course_category": "Danza", //da modificare
         "course_date": "Oggi",
         "course_name": "Les mil grit",
@@ -246,7 +247,7 @@ export const allCourses: Courses = [
     },
     {
         "id": "15",
-        "course_url": "../img/bodypump.jpg",
+        "course_url": `${process.env.PUBLIC_URL}/img/bodypump.jpg`,
         "course_category": "cardiovascolari e tonificanzione", //da modificare
         "course_date": "Oggi",
         "course_name": "BodyPump",
