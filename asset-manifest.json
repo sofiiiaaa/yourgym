@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/yourgym/static/css/main.56e8b4fc.css",
-    "main.js": "/yourgym/static/js/main.841893d0.js",
+    "main.css": "/yourgym/static/css/main.cfee492b.css",
+    "main.js": "/yourgym/static/js/main.832dff51.js",
     "static/js/787.389b68b0.chunk.js": "/yourgym/static/js/787.389b68b0.chunk.js",
     "index.html": "/yourgym/index.html",
-    "main.56e8b4fc.css.map": "/yourgym/static/css/main.56e8b4fc.css.map",
-    "main.841893d0.js.map": "/yourgym/static/js/main.841893d0.js.map",
+    "main.cfee492b.css.map": "/yourgym/static/css/main.cfee492b.css.map",
+    "main.832dff51.js.map": "/yourgym/static/js/main.832dff51.js.map",
     "787.389b68b0.chunk.js.map": "/yourgym/static/js/787.389b68b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56e8b4fc.css",
-    "static/js/main.841893d0.js"
+    "static/css/main.cfee492b.css",
+    "static/js/main.832dff51.js"
   ]
 }
