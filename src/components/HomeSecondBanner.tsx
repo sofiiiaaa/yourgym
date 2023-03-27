@@ -1,7 +1,7 @@
-import React, {FC} from "react";
+import React from "react";
 import { Container, Image, Row, Col } from "react-bootstrap";
 
-const HomeSecondBanner = () => {
+const HomeSecondBanner: React.FC = () => {
 
     if (window.innerWidth <567) return <></>
     return (

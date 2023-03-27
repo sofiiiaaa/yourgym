@@ -1,12 +1,13 @@
-import React, { FC } from "react";
-import { Container, Row, Col, Card, Carousel } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col, Carousel } from "react-bootstrap";
 import CourseCard from "./CourseCard";
 import { allCourses } from "../mock/list_all_courses";
-import { CalendarWeek, Clock } from 'react-bootstrap-icons';
+import { CalendarWeek } from 'react-bootstrap-icons';
 import { user } from "../mock/user_data";
 
-const HomeActivities = () => {
+const HomeActivities: React.FC = () => {
     console.log(user) //per vedere se si aggiornano da annulla, iscriviti e metti ihn attesa.
+    // const [couse, setCourse] = useState()
     let next_activities = allCourses.filter((course) => user.subscibed_courses.includes(course.id));
     let waiting_activities = allCourses.filter((course) => user.waiting_list.includes(course.id));
 

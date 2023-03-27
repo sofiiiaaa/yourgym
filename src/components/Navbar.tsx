@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {Image,} from "react-bootstrap";
 import { House, CalendarWeek, Alarm, ChevronDown } from 'react-bootstrap-icons';
-import { BrowserRouter, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavigationBar: React.FC = () => {
     return (

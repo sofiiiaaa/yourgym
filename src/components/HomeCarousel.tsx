@@ -1,12 +1,8 @@
-import React, {FC} from "react";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import {OneCarousel} from "../mock/myCarousel";
 import { ChevronRight } from "react-bootstrap-icons";
-import Carousel from 'react-bootstrap/Carousel';
 
 interface HomeCarouselProp {
     carousel: OneCarousel

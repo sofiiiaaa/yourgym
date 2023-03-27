@@ -1,11 +1,10 @@
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import HomeCarousel from "./HomeCarousel";
 import { allCarousels } from "./../mock/myCarousel";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
-import Carousel from 'react-bootstrap/Carousel';
 
-const HomeAllCarousells = () => {
+const HomeAllCarousells: React.FC = () => {
 
     const [showAll, setShowAll] = useState(false);
     console.log(showAll)

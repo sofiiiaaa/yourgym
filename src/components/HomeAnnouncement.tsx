@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import Accordion from 'react-bootstrap/Accordion';
 import HomeSingleAnnouncement from "./HomeSingleAnnouncement";
 import Container from 'react-bootstrap/Container';
@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 import { allAnnouncements } from "../mock/announcement";
 import { Bell } from 'react-bootstrap-icons';
 
-const HomeAnnouncement = () => {
+const HomeAnnouncement: React.FC = () => {
     const [showAll, setShowAll] = useState(false);
     console.log(showAll)
 
@@ -18,15 +18,6 @@ const HomeAnnouncement = () => {
         )
     })
     
-     const text_web = 
-        <Button className="show-all-btn" onClick={() => setShowAll(!showAll)}>
-                        {!showAll? <span><b>Mostra tutti</b></span> : <span><b>Nascondi tutti</b></span>}
-                </Button>
-    
-    const text_phone =
-        <Button className="show-all-btn" onClick={() => setShowAll(!showAll)}>
-                        {!showAll? <span> <b>Visualizza tutti</b></span> : <span><b>Nascondi tutti</b></span>}
-                </Button>
 
     return (
         <Container>

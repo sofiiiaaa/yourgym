@@ -1,7 +1,7 @@
-import React, { FC, useState } from "react";
-import { Row, Col, Card, Image, Button, } from "react-bootstrap";
-import { ChevronRight, Clock } from 'react-bootstrap-icons';
-import { allCourses, Course } from "../mock/list_all_courses";
+import React from "react";
+import { Row, Col, Card,  Button, } from "react-bootstrap";
+import {  Clock } from 'react-bootstrap-icons';
+import {  Course } from "../mock/list_all_courses";
 import { user } from "../mock/user_data";
 
 interface CourseCardProps {
@@ -9,7 +9,6 @@ interface CourseCardProps {
 }
 
 const CourseCard: React.FC<CourseCardProps> = (obj) => {
-    const [unsubscribe, setUnsubscribe] = useState(null)
 
     let cardDetail;
 
@@ -35,7 +34,7 @@ const CourseCard: React.FC<CourseCardProps> = (obj) => {
                 N persone di te
             </Col>
             <Col>
-            <Button onClick = {()=> alert("no page available.")}>
+            <Button onClick = {()=> alert("action page available.")}>
                 ANNULLA
             </Button>
             </Col>

@@ -1,8 +1,8 @@
-import React, {FC} from "react";
+import React from "react";
 import { Instagram, Facebook, Youtube, ChevronDown } from "react-bootstrap-icons";
 import { Container, Row, Col, Image } from "react-bootstrap";
 
-const Footer = () => {
+const Footer: React.FC = () => {
     return (
         <Container className="footer-bar">
 

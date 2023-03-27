@@ -1,7 +1,7 @@
-import React, {FC} from "react";
-import { Container, Image, Row, Col, Button } from "react-bootstrap";
+import React from "react";
+import { Container, Image, Row, Col } from "react-bootstrap";
 
-const HomeFirstBanner = () => {
+const HomeFirstBanner: React.FC = () => {
 
 
     if (window.innerWidth < 576) return <></>

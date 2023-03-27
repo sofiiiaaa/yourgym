@@ -1,6 +1,6 @@
-import React, {FC} from "react";
+import React from "react";
 
-const ErrorPage = () => {
+const ErrorPage: React.FC = () => {
     return (
         <div> 
             <p>Sei atterrato su una pagina non esistente</p>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Navbar, Nav } from "react-bootstrap";
 import { GeoAlt, Fire, BinocularsFill, Filter } from "react-bootstrap-icons";
-import { DropdownButton, Dropdown } from 'react-bootstrap';
+import { Dropdown } from 'react-bootstrap';
 import { allCourses } from "../mock/list_all_courses";
 import FilterCard from "./FilterCard";
 import { user } from "../mock/user_data";

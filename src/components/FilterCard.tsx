@@ -1,9 +1,9 @@
-import React, {FC, useState} from "react";
+import React from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import { Course } from "../mock/list_all_courses";
 import { ChevronRight, Clock } from "react-bootstrap-icons";
-import { user, UserData } from "../mock/user_data";
+import {  UserData } from "../mock/user_data";
 
 interface FilterCardProps {
     course: Course
@@ -16,7 +16,6 @@ const FilterCard : React.FC<FilterCardProps>= ({course, setCourse, user, setUser
 
 
     let btn;
-    let free_sits;
 
     console.log("<3")
     if(!user.subscibed_courses.includes(course.id) && !user.waiting_list.includes(course.id) && course.course_still_available_spots > 0 ) {
