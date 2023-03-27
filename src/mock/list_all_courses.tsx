@@ -144,7 +144,7 @@ export const allCourses: Courses = [
         "course_hour_last": "30 min",
         "course_location": "Terme",
         "course_sala_name": "Consious",
-        "course_people_waiting": 0,
+        "course_people_waiting": 15,
         "course_open_waiting": "12 ore",
         "course_still_available_spots":2,
         "course_all_available_spots": 30

@@ -7,5 +7,5 @@ export interface UserData {
 export const user: UserData = {
     "id" : "1",
     "subscibed_courses": ["1","2"],
-    "waiting_list": ["3"]
+    "waiting_list": ["3", "8"]
 }

@@ -31,7 +31,7 @@ const CourseCard: React.FC<CourseCardProps> = (obj) => {
     cardDetail =(
         <Row>
             <Col> 
-                N persone di te
+                {obj.course.course_people_waiting == 0? <p>Sei l'unica persona in attesa </p> : <p>Ci sono {obj.course.course_people_waiting} persone prima di te. </p>}
             </Col>
             <Col>
             <Button onClick = {()=> alert("action page available.")}>
@@ -47,7 +47,7 @@ const CourseCard: React.FC<CourseCardProps> = (obj) => {
         <Card key={"coursecard" + obj.course.id}>
             <Row>
                 <Col xs={12} md={6} lg={3}>
-                <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/img/arrampicata.jpg`} alt="arrampicata" />
+                <Card.Img variant="top" src={obj.course.course_url} alt="course img" />
                 </Col>
                 <Col xs={12} md={6} lg={9}>
                 <Card.Body>
